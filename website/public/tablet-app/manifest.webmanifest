@@ -1,0 +1,1 @@
+{"name":"Artisan Tablette","short_name":"Artisan","description":"Clients et devis - reseau local","start_url":"/tablet-app/","display":"standalone","background_color":"#0f172a","theme_color":"#0f172a","lang":"en","scope":"/tablet-app/","icons":[{"src":"/tablet-app/vite.svg","sizes":"512x512","type":"image/svg+xml","purpose":"any"}]}

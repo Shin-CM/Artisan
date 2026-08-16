@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+/*
+ * Aligne le variant `dark:` de Tailwind v4 sur la classe `.dark` posée par
+ * `ThemeRoot` (au lieu du `prefers-color-scheme` par défaut). Sans cette ligne,
+ * un OS en mode sombre force tous les `dark:…` même si l'utilisateur a choisi
+ * le thème clair dans l'app — d'où des contrastes illisibles.
+ */
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-background: oklch(0.985 0 0);
+  --color-foreground: oklch(0.145 0 0);
+  --color-card: oklch(1 0 0);
+  --color-card-foreground: oklch(0.145 0 0);
+  --color-popover: oklch(1 0 0);
+  --color-popover-foreground: oklch(0.145 0 0);
+  --color-primary: oklch(0.205 0 0);
+  --color-primary-foreground: oklch(0.985 0 0);
+  --color-secondary: oklch(0.967 0 0);
+  --color-secondary-foreground: oklch(0.205 0 0);
+  --color-muted: oklch(0.967 0 0);
+  --color-muted-foreground: oklch(0.556 0 0);
+  --color-accent: oklch(0.967 0 0);
+  --color-accent-foreground: oklch(0.205 0 0);
+  --color-destructive: oklch(0.577 0.245 27.325);
+  --color-border: oklch(0.922 0 0);
+  --color-input: oklch(0.922 0 0);
+  --color-ring: oklch(0.708 0 0);
+  --color-control-accent: oklch(0.488 0.243 264.376);
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.625rem;
+}
+
+.dark {
+  --color-background: oklch(0.145 0 0);
+  --color-foreground: oklch(0.985 0 0);
+  --color-card: oklch(0.205 0 0);
+  --color-card-foreground: oklch(0.985 0 0);
+  --color-popover: oklch(0.205 0 0);
+  --color-popover-foreground: oklch(0.985 0 0);
+  --color-primary: oklch(0.922 0 0);
+  --color-primary-foreground: oklch(0.205 0 0);
+  --color-secondary: oklch(0.269 0 0);
+  --color-secondary-foreground: oklch(0.985 0 0);
+  --color-muted: oklch(0.269 0 0);
+  --color-muted-foreground: oklch(0.708 0 0);
+  --color-accent: oklch(0.269 0 0);
+  --color-accent-foreground: oklch(0.985 0 0);
+  --color-destructive: oklch(0.704 0.191 22.216);
+  --color-border: oklch(1 0 0 / 10%);
+  --color-input: oklch(1 0 0 / 15%);
+  --color-ring: oklch(0.556 0 0);
+  --color-control-accent: oklch(0.62 0.19 255);
+}
+
+/* Radios / cases natives : accent bleu lisible (évite le gris/noir du rendu système). */
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: var(--color-control-accent);
+  height: 1rem;
+  width: 1rem;
+  flex-shrink: 0;
+}
+
+* {
+  border-color: var(--color-border);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+}
+
+/* Défilement sans barre visible (Firefox / Chromium / legacy Edge) */
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+/*
+ * Sonner (richColors) : le paquet injecte ses styles en JS après le CSS de l’app,
+ * ce qui écrase des variables sans !important — d’où un fond « warning » quasi blanc.
+ * Ici : orange visible sur fond app clair + bordure soutenue.
+ */
+[data-sonner-toaster][data-sonner-theme="light"] {
+  --warning-bg: hsl(28, 100%, 76%) !important;
+  --warning-border: hsl(18, 78%, 38%) !important;
+  --warning-text: hsl(14, 92%, 11%) !important;
+}

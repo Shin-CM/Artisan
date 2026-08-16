@@ -1,0 +1,27 @@
+{
+  "version": "2026.1",
+  "publicFixed": [
+    { "date": "2024-08-01", "name": "Fête nationale" },
+    { "date": "2025-08-01", "name": "Fête nationale" },
+    { "date": "2026-08-01", "name": "Fête nationale" },
+    { "date": "2027-08-01", "name": "Fête nationale" },
+    { "date": "2028-08-01", "name": "Fête nationale" }
+  ],
+  "schoolBlocksZH": [
+    { "name": "Vacances d'automne", "start": "2025-10-06", "end": "2025-10-19" },
+    { "name": "Vacances de Noël", "start": "2025-12-22", "end": "2026-01-04" },
+    { "name": "Vacances de sport", "start": "2026-02-02", "end": "2026-02-06" },
+    { "name": "Vacances de printemps", "start": "2026-04-03", "end": "2026-04-17" },
+    { "name": "Vacances d'été", "start": "2026-07-04", "end": "2026-08-15" },
+    { "name": "Vacances d'automne", "start": "2026-10-05", "end": "2026-10-18" },
+    { "name": "Vacances de Noël", "start": "2026-12-21", "end": "2027-01-03" },
+    { "name": "Vacances de sport", "start": "2027-02-01", "end": "2027-02-05" },
+    { "name": "Vacances de printemps", "start": "2027-04-02", "end": "2027-04-16" },
+    { "name": "Vacances d'été", "start": "2027-07-03", "end": "2027-08-14" },
+    { "name": "Vacances d'automne", "start": "2027-10-04", "end": "2027-10-17" },
+    { "name": "Vacances de Noël", "start": "2027-12-20", "end": "2028-01-02" },
+    { "name": "Vacances de sport", "start": "2028-01-31", "end": "2028-02-04" },
+    { "name": "Vacances de printemps", "start": "2028-04-07", "end": "2028-04-21" },
+    { "name": "Vacances d'été", "start": "2028-07-08", "end": "2028-08-19" }
+  ]
+}

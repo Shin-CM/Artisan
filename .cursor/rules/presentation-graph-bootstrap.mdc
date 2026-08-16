@@ -1,0 +1,20 @@
+---
+description: Amorcer l’outil graphe local tools/presentation-graph et le JSON aligné sur Fonctionnalités.md
+alwaysApply: false
+---
+
+# Bootstrap — graphe de présentation (local)
+
+Référence détaillée : [docs/PresentationGraph-OutilLocal-NouveauProjet.md](docs/PresentationGraph-OutilLocal-NouveauProjet.md).
+
+Lorsqu’un **nouveau dépôt** doit inclure l’outil **Présentation / Technique** (graphe hors code produit) :
+
+1. Créer **`tools/presentation-graph/`** : mini-projet **Vite + React + TypeScript** autonome (`package.json`, `vite.config.ts`, `tsconfig.json`, `index.html`, `README.md`).
+2. Dépendances typiques : `@xyflow/react`, `elkjs`, `react-router-dom`, `lucide-react` ; scripts `dev`, `build`, `preview`.
+3. **Données** : `src/data/investor-graph.json` avec pour chaque nœud **`id`**, **`label`**, **`group`** (couleurs domaine) ; arêtes **`id`**, **`source`**, **`target`**.
+4. **UI** : layout header ; routes **Présentation** (`/pitch`) et **Technique** (`/tech`) ; graphe ELK + boutons espacement / recadrage ; arêtes **type `step`**, **`elevateEdgesOnSelect={false}`**, nœuds avec **`zIndex`** au-dessus des arêtes, fonds opaques ; clic nœud = surbrillance des arêtes incidentes, clic sur le fond = réinitialisation.
+5. **Technique** : `public/cgc/viz.html` (placeholder) + `public/cgc/README.md` (export CodeGraphContext optionnel `--viz`).
+6. Mettre à jour **`Fonctionnalités.md`** : section « Outils dépôt » — chemins, commandes `cd tools/presentation-graph`, `npm install`, `npm run dev`, rôle des vues, **mise à jour conjointe** du JSON quand la doc produit change.
+7. **Ne pas** placer la logique de cet outil dans le `src/` du produit principal (ex. app Tauri) ni le coupler au build principal, sauf demande explicite.
+
+Si un **dépôt modèle** ou une **archive** contient déjà `tools/presentation-graph/` complet : **copier le dossier** plutôt que de régénérer les fichiers un par un.

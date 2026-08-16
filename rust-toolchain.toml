@@ -1,0 +1,4 @@
+[toolchain]
+# Tauri 2.10+ (serde_with, time, …) exigent rustc ≥ 1.88. Utiliser rustup, pas le rustc Homebrew.
+channel = "1.88"
+components = ["rustfmt", "clippy"]
