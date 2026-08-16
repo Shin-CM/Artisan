@@ -2,50 +2,50 @@
 
 ## Pourquoi Artisan existe
 
-Artisan est ne d'un besoin tres personnel.
+Artisan est né d'un besoin très personnel.
 
-A l'origine, ce projet a ete developpe pour ma compagne, qui exerce le metier de relieuse artisanale. Son quotidien impliquait de nombreuses taches administratives qui prenaient du temps sans reellement apporter de valeur a son travail : gerer des fichiers Excel, preparer des documents dans Word, retrouver des informations sur ses clients, etablir des devis et des factures, ou encore penser a recontacter certains clients.
+À l'origine, ce projet a été développé pour ma compagne, qui exerce le métier de relieuse artisanale. Son quotidien impliquait de nombreuses tâches administratives qui prenaient du temps sans réellement apporter de valeur à son travail : gérer des fichiers Excel, préparer des documents dans Word, retrouver des informations sur ses clients, établir des devis et des factures, ou encore penser à recontacter certains clients.
 
-L'objectif d'Artisan etait donc assez simple : reduire cette charge administrative et lui permettre de consacrer davantage de temps a son metier.
+L'objectif d'Artisan était donc assez simple : réduire cette charge administrative et lui permettre de consacrer davantage de temps à son métier.
 
-Au fil du developpement, le projet a grandi. Des automatisations ont ete ajoutees, comme la possibilite d'identifier des clients reguliers dont on n'a plus eu de nouvelles depuis un certain temps. Une gestion des produits et de leurs modificateurs a egalement ete pensee afin de pouvoir construire simplement des offres adaptees aux besoins de chaque artisan.
+Au fil du développement, le projet a grandi. Des automatisations ont été ajoutées, comme la possibilité d'identifier des clients réguliers dont on n'a plus eu de nouvelles depuis un certain temps. Une gestion des produits et de leurs modificateurs a également été pensée afin de pouvoir construire simplement des offres adaptées aux besoins de chaque artisan.
 
-Par exemple, un produit peut etre enregistre avec une categorie et un prix de base, puis recevoir differents modificateurs : un croissant a 2 CHF pourra ainsi avoir un supplement "jambon" de 0,80 CHF, sans devoir recreer chaque declinaison comme un produit independant.
+Par exemple, un produit peut être enregistré avec une catégorie et un prix de base, puis recevoir différents modificateurs : un croissant à 2 CHF pourra ainsi avoir un supplément "jambon" de 0,80 CHF, sans devoir recréer chaque déclinaison comme un produit indépendant.
 
 ## Pourquoi le projet devient open source
 
-Malheureusement, les circonstances ont change.
+Malheureusement, les circonstances ont changé.
 
-Pour des raisons economiques, ma compagne a perdu son emploi. Dans ces conditions, continuer a developper et maintenir Artisan pour notre seul usage n'a plus reellement de sens.
+Pour des raisons économiques, ma compagne a perdu son emploi. Dans ces conditions, continuer à développer et maintenir Artisan pour notre seul usage n'a plus réellement de sens.
 
-Pour autant, nous avons pense qu'il serait dommage de simplement abandonner le projet.
+Pour autant, nous avons pensé qu'il serait dommage de simplement abandonner le projet.
 
-Artisan a ete cree pour repondre a des problemes tres concrets rencontres par une artisane. Et meme si nous n'en avons aujourd'hui plus le meme usage, nous savons que d'autres artisans peuvent rencontrer exactement les memes difficultes : beaucoup de temps passe dans Excel et Word, des taches administratives repetitives, des informations dispersees et peu de temps disponible pour se consacrer a leur veritable metier.
+Artisan a été créé pour répondre à des problèmes très concrets rencontrés par une artisane. Et même si nous n'en avons aujourd'hui plus le même usage, nous savons que d'autres artisans peuvent rencontrer exactement les mêmes difficultés : beaucoup de temps passé dans Excel et Word, des tâches administratives répétitives, des informations dispersées et peu de temps disponible pour se consacrer à leur véritable métier.
 
 C'est pourquoi nous avons choisi de rendre Artisan disponible en open source, sous licence MIT.
 
-## Une demande a ceux qui continueront le projet
+## Une demande à ceux qui continueront le projet
 
-La licence MIT vous donne une grande liberte. Vous pouvez utiliser Artisan, le modifier, le reprendre, creer votre propre version ou meme construire une activite commerciale autour de celui-ci.
+La licence MIT vous donne une grande liberté. Vous pouvez utiliser Artisan, le modifier, le reprendre, créer votre propre version ou même construire une activité commerciale autour de celui-ci.
 
-Et c'est precisement ce que nous souhaitons en le publiant ainsi : qu'Artisan puisse continuer a vivre, meme si nous ne sommes plus en mesure de le faire nous-memes.
+Et c'est précisément ce que nous souhaitons en le publiant ainsi : qu'Artisan puisse continuer à vivre, même si nous ne sommes plus en mesure de le faire nous-mêmes.
 
-Nous avons cependant une petite demande envers celles et ceux qui decideront de poursuivre le projet ou d'en faire une solution commerciale.
+Nous avons cependant une petite demande envers celles et ceux qui décideront de poursuivre le projet ou d'en faire une solution commerciale.
 
-N'oubliez pas les personnes pour lesquelles Artisan a ete cree.
+N'oubliez pas les personnes pour lesquelles Artisan a été créé.
 
-Si vous developpez une version commerciale d'Artisan, nous vous demandons simplement, dans la mesure du possible, de conserver une tarification accessible aux artisans et aux petites structures.
+Si vous développez une version commerciale d'Artisan, nous vous demandons simplement, dans la mesure du possible, de conserver une tarification accessible aux artisans et aux petites structures.
 
-L'objectif n'a jamais ete de construire un outil destine aux grandes entreprises avec des abonnements hors de portee d'un independant. Artisan est ne pour aider quelqu'un qui exerce son metier avec ses mains, son savoir-faire et souvent des moyens beaucoup plus limites.
+L'objectif n'a jamais été de construire un outil destiné aux grandes entreprises avec des abonnements hors de portée d'un indépendant. Artisan est né pour aider quelqu'un qui exerce son métier avec ses mains, son savoir-faire et souvent des moyens beaucoup plus limités.
 
-Cette demande n'est evidemment pas une contrainte de la licence MIT. Vous etes libres de faire evoluer le projet comme vous le souhaitez.
+Cette demande n'est évidemment pas une contrainte de la licence MIT. Vous êtes libres de faire évoluer le projet comme vous le souhaitez.
 
-C'est simplement un souhait personnel du createur du projet : si Artisan peut continuer a aider d'autres artisans, alors nous considererons que le temps consacre a sa creation n'aura pas ete perdu.
+C'est simplement un souhait personnel du créateur du projet : si Artisan peut continuer à aider d'autres artisans, alors nous considérerons que le temps consacré à sa création n'aura pas été perdu.
 
 ## Merci
 
-A celles et ceux qui utiliseront Artisan, qui corrigeront un bug, ajouteront une fonctionnalite, amelioreront la documentation, proposeront une idee ou decideront de poursuivre son developpement : merci.
+À celles et ceux qui utiliseront Artisan, qui corrigeront un bug, ajouteront une fonctionnalité, amélioreront la documentation, proposeront une idée ou décideront de poursuivre son développement : merci.
 
-Meme si les circonstances qui ont donne naissance a ce projet ont change, nous esperons qu'Artisan pourra trouver une nouvelle vie aupres de celles et ceux pour qui il avait ete imagine au depart.
+Même si les circonstances qui ont donné naissance à ce projet ont changé, nous espérons qu'Artisan pourra trouver une nouvelle vie auprès de celles et ceux pour qui il avait été imaginé au départ.
 
-Un outil cree pour une artisane, aujourd'hui libre de servir tous les artisans.
+Un outil créé pour une artisane, aujourd'hui libre de servir tous les artisans.
