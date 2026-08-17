@@ -1,5 +1,7 @@
 # Histoire du projet
 
+Présentation GitHub : [English README](../README.md) · [README français](../README.fr.md)
+
 ## Pourquoi Artisan existe
 
 Artisan est né d'un besoin très personnel.

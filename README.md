@@ -1,51 +1,55 @@
 # Artisan
 
-Artisan est une application desktop **offline-first** pour les artisans et les petites structures, construite avec **Tauri**, **React** et **SQLite**.
+**English** | [Français](README.fr.md)
 
-Le projet aide à gérer les **devis**, **factures**, **clients**, **produits**, **rappels**, **calendrier**, **rapports** et modules métier associés, sans abonnement obligatoire ni dépendance à un service distant.
+Artisan is an **offline-first** desktop app for artisans and small businesses, built with **Tauri**, **React**, and **SQLite**.
 
-## Pourquoi Artisan existe
+It helps you manage **quotes**, **invoices**, **clients**, **products**, **reminders**, **calendar**, **reports**, and related business modules, without a mandatory subscription or a required remote service.
 
-Artisan est né d'un besoin très concret : réduire la charge administrative d'une artisane afin qu'elle puisse consacrer plus de temps à son métier.
+The application interface is currently in French. A [French README](README.fr.md) is also available.
 
-Au départ, l'objectif était simple : éviter de passer trop de temps entre Excel, Word, les relances clients, les devis, les factures et les informations dispersées. Le projet a ensuite grandi avec des automatisations, une gestion plus fine du catalogue et une organisation plus adaptée au quotidien d'un indépendant.
+## Why Artisan exists
 
-Le texte complet sur l'origine du projet et l'intention de son auteur est disponible dans [`docs/Histoire-du-projet.md`](docs/Histoire-du-projet.md).
+Artisan started from a very concrete need: reducing the administrative load of an artisan so she could spend more time on her craft.
 
-## Pourquoi le projet est open source
+The original goal was simple: spend less time jumping between Excel, Word, client follow-ups, quotes, invoices, and scattered information. The project then grew with automations, finer catalog management, and an organization better suited to the day-to-day work of an independent.
 
-Artisan est aujourd'hui publié en **open source** sous licence **MIT**.
+The full origin story and the author's intent are available in French in [`docs/Histoire-du-projet.md`](docs/Histoire-du-projet.md).
 
-L'idée n'est pas seulement de partager du code, mais de permettre au projet de continuer à vivre, même si ses créateurs ne sont plus en mesure de le faire évoluer seuls. Si d'autres artisans, développeurs ou petites structures peuvent s'en servir, l'améliorer ou le faire grandir, alors le projet aura conservé son sens.
+## Why the project is open source
 
-## Ce que fait Artisan
+Artisan is now published as **open source** under the **MIT** license.
 
-- Gestion de **devis**, **factures**, **avoirs** et **bons de commande**
-- Gestion **clients**, **catalogue produits** et **variantes / modificateurs**
-- **Calendrier** métier, rappels et suivi d'événements
-- **CRM**, **suivi clients**, **recouvrement** et **projets** via modules
-- **Exports PDF**, **Data Manager**, **rapports** et outils de pilotage
-- **PWA tablette** et **API locale** pour usages réseau / atelier
-- **Marketplace interne** pour activer des modules optionnels par espace
+The point is not only to share code, but to let the project keep living, even if its creators can no longer evolve it alone. If other artisans, developers, or small businesses can use it, improve it, or grow it, then the project will have kept its meaning.
 
-Pour la description détaillée et à jour des fonctionnalités, voir [`Fonctionnalités.md`](Fonctionnalités.md).
+## What Artisan does
 
-## Démarrage rapide
+- **Quotes**, **invoices**, **credit notes**, and **purchase orders**
+- **Clients**, **product catalog**, and **variants / modifiers**
+- Business **calendar**, reminders, and event tracking
+- **CRM**, **client follow-up**, **collections**, and **projects** via modules
+- **PDF exports**, **Data Manager**, **reports**, and planning tools
+- **Tablet PWA** and **local API** for workshop / LAN use
+- **Internal marketplace** to enable optional modules per workspace
 
-### Application principale
+For the detailed, up-to-date product and technical description (in French), see [`Fonctionnalités.md`](Fonctionnalités.md).
+
+## Quick start
+
+### Main application
 
 ```bash
 npm install
 npm run tauri dev
 ```
 
-Pour lancer uniquement le front web local :
+To run only the local web frontend:
 
 ```bash
 npm run dev
 ```
 
-### Site vitrine
+### Marketing website
 
 ```bash
 cd website
@@ -53,7 +57,7 @@ npm install
 npm run dev
 ```
 
-### Graphe de présentation
+### Presentation graph
 
 ```bash
 cd tools/presentation-graph
@@ -61,29 +65,23 @@ npm install
 npm run dev
 ```
 
-Documentation locale : [`tools/presentation-graph/README.md`](tools/presentation-graph/README.md)
+Local docs: [`tools/presentation-graph/README.md`](tools/presentation-graph/README.md)
 
 ## Documentation
 
-- [`Fonctionnalités.md`](Fonctionnalités.md) : documentation produit et technique détaillée
-- [`docs/Histoire-du-projet.md`](docs/Histoire-du-projet.md) : histoire du projet, passage en open source et souhaits du créateur
-- [`tools/presentation-graph/README.md`](tools/presentation-graph/README.md) : outil local de graphe pour démos et cartographie produit
+- [French README](README.fr.md)
+- [`Fonctionnalités.md`](Fonctionnalités.md): detailed product and technical documentation (French)
+- [`docs/Histoire-du-projet.md`](docs/Histoire-du-projet.md): project history, open-source decision, and the creator's wishes (French)
+- [`tools/presentation-graph/README.md`](tools/presentation-graph/README.md): local graph tool for demos and product mapping
 
-## Licence
+## License
 
-Artisan est distribué sous licence **MIT**. Voir [`LICENSE`](LICENSE).
+Artisan is distributed under the **MIT** license. See [`LICENSE`](LICENSE).
 
-La licence donne une grande liberté d'utilisation, de modification et de redistribution. Le souhait exprimé dans l'histoire du projet concernant l'accessibilité pour les artisans est un souhait moral du créateur, pas une condition juridique supplémentaire.
+The license gives broad freedom to use, modify, and redistribute. The wish expressed in the project history about keeping the tool affordable for artisans is a moral request from the creator, not an extra legal condition.
 
-## GitHub
+## Thanks
 
-Si tu publies ce dépôt sur GitHub, la présentation recommandée est :
+Thanks to everyone who uses Artisan, fixes a bug, suggests an idea, improves the docs, or continues its development.
 
-- **Description courte** : `Logiciel libre offline-first pour devis, factures et gestion artisanale.`
-- **Topics** : `artisan`, `invoicing`, `billing`, `quotes`, `tauri`, `react`, `sqlite`, `offline-first`, `open-source`
-
-## Merci
-
-Merci aux personnes qui utiliseront Artisan, corrigeront un bug, proposeront une idée, amélioreront la documentation ou poursuivront son développement.
-
-Un outil créé pour une artisane, aujourd'hui libre de servir tous les artisans.
+A tool created for one artisan, now free to serve all artisans.

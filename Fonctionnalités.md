@@ -4,8 +4,9 @@ Application desktop **Tauri + React + SQLite** (offline-first), interface en **f
 
 Présentation GitHub et documentation racine :
 
-- **`README.md`** : vitrine GitHub du projet, positionnement, démarrage rapide et liens de documentation.
-- **`docs/Histoire-du-projet.md`** : origine d’Artisan, passage en open source et souhaits du créateur pour la suite du projet.
+- **`README.md`** : vitrine GitHub du projet **en anglais** (public le plus large), avec un lien cliquable vers la version française.
+- **`README.fr.md`** : même présentation en **français**.
+- **`docs/Histoire-du-projet.md`** : origine d’Artisan, passage en open source et souhaits du créateur pour la suite du projet (français).
 
 ## Interface utilisateur
 
@@ -202,7 +203,7 @@ Présentation GitHub et documentation racine :
 
 ## Outils dépôt
 
-- **Présentation GitHub** : **`README.md`** sert de page d’accueil du dépôt public (licence **MIT**) avec le résumé du projet, les commandes de démarrage, le contexte open source et les suggestions de description / topics GitHub. Le texte long sur l’origine du projet est conservé dans **`docs/Histoire-du-projet.md`**.
+- **Présentation GitHub** : **`README.md`** (anglais) sert de page d’accueil du dépôt public (licence **MIT**) ; lien cliquable vers **`README.fr.md`** pour la même vitrine en français. Le texte long sur l’origine du projet est conservé dans **`docs/Histoire-du-projet.md`**.
 - **Graphe de présentation** (`tools/presentation-graph/`) : mini-site **Vite + React** (hors `src/` de l’app Tauri), **React Flow** + **ELK.js** pour le layout. Deux vues dans le header : **Présentation** (`/pitch`, **cartographie produit** Artisan dans `src/data/investor-graph.json` avec champ **`group`** par nœud pour la **couleur** de domaine ; **clic sur un nœud** : surbrillance des **arêtes** liées et atténuation du reste ; clic sur le fond pour tout réafficher ; **modes d’espacement ELK** via **« Espacer la vue »**, arêtes **orthogonal (step)**, **« Recadrer »** ; **Technique** (`/tech`, iframe sur **`public/cgc/viz.html`** — à remplacer par l’export HTML **CodeGraphContext** généré avec `--viz`). Commandes : `cd tools/presentation-graph`, `npm install`, `npm run dev` (port **5199** par défaut, voir `vite.config.ts`). Documentation locale : **`tools/presentation-graph/README.md`**. **Réutilisation / nouveau dépôt** : guide transportable **[`docs/PresentationGraph-OutilLocal-NouveauProjet.md`](docs/PresentationGraph-OutilLocal-NouveauProjet.md)** ; règle Cursor d’amorçage **[`.cursor/rules/presentation-graph-bootstrap.mdc`](.cursor/rules/presentation-graph-bootstrap.mdc)** (à copier avec le dossier `tools/presentation-graph/` ou comme modèle).
 
 ## À venir (affinements)
